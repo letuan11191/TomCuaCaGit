@@ -18,6 +18,6 @@ public class StartDice : MonoBehaviour {
     {
         Time.timeScale = 1;
         cv.SetActive(false);
-        
+        Controller.Ctr.SendToServer();
     }
 }

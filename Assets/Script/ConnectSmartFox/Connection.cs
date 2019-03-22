@@ -13,7 +13,7 @@ using Sfs2X.Entities.Data;
 
 public class Connection : MonoBehaviour {
 
-    public static string username;
+    public static string username { get; set; }
     public static string mess;
 
     public SmartFox sfs;
@@ -100,19 +100,19 @@ public class Connection : MonoBehaviour {
         User user = (User)evt.Params["user"];
         Debug.Log("Hello" + user.Name);
 
-        //if(sfs.RoomList.Count > 0)
-        //{
-        //    sfs.Send(new JoinRoomRequest(sfs.RoomList[0].Name));            
-        //    Debug.Log(sfs.RoomList[0].Name);
-        //}
+        if (sfs.RoomList.Count > 0)
+        {
+            sfs.Send(new JoinRoomRequest(sfs.RoomList[0].Name));
+            Debug.Log(sfs.RoomList[0].Name);
+        }
         ISFSObject data = (ISFSObject)evt.Params["data"];
         if(data != null)
         {
-            string username = data.GetUtfString(SF.USERNAME);
-            string mess = data.GetUtfString(SF.MESS);
+            username = data.GetUtfString(SF.USERNAME);
+            mess = data.GetUtfString(SF.MESS);
 
             Debug.Log(username + "Thong Bao: " + mess);
-            SceneManager.LoadScene("Game");
+            //SceneManager.LoadScene("Game");
 
         }
         else
@@ -129,7 +129,7 @@ public class Connection : MonoBehaviour {
 
 
         // Go to main game scene
-        //SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Game");
     }
 
     private void OnRoomJoinError(BaseEvent evt)

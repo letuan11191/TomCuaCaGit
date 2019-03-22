@@ -53,7 +53,7 @@ public class Dice : MonoBehaviour {
         //    oldTime = Time.time;
         //}
         float timer = Time.time - oldTime;
-        Debug.Log(timer);
+        //Debug.Log(timer);
         if (timer > 7)
         {
             oldTime = Time.time;

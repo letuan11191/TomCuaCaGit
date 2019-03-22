@@ -2296,6 +2296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929720695}
   - component: {fileID: 1929720694}
+  - component: {fileID: 1929720696}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -2316,6 +2317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cv: {fileID: 32876745}
   ScoreTxt: {fileID: 2055230374}
+  UserName: {fileID: 892181545}
 --- !u!4 &1929720695
 Transform:
   m_ObjectHideFlags: 0
@@ -2329,6 +2331,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1929720696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1929720693}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b7ea3982e1484a498f03730964a3f56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1932379348
 GameObject:
   m_ObjectHideFlags: 0

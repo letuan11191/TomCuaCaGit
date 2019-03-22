@@ -54,6 +54,7 @@
      <Compile Include="Assets\Script\ChooseButton.cs" />
      <Compile Include="Assets\Script\ConnectSmartFox\Connection.cs" />
      <Compile Include="Assets\Script\ConnectSmartFox\Manager.cs" />
+     <Compile Include="Assets\Script\ConnectSmartFox\NetworkManager.cs" />
      <Compile Include="Assets\Script\ConnectSmartFox\PlayerController.cs" />
      <Compile Include="Assets\Script\ConnectSmartFox\SF.cs" />
      <Compile Include="Assets\Script\ConnectSmartFox\SimpleRemoteInterpolation.cs" />
